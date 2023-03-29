@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="site officiel du fc saint eloi lupopo">
+    <meta content="site officiel Lupopo saint Eloit " name="keywords">
+
+    <title>{% block title %} fc Saint Eloi Lupopo | site officiel{% endblock %}</title>
+    <!-- static resources -->
+    {% load static %}
+    <link href="{% static 'img/logo/logo.ico' %}" rel="icon">
+    <!-- boostrap an font-awesone -->
+    <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+
+    <!-- carousel -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.min.css' %}">
+
+    <!-- personnal style -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css'%}">
+
+</head>
+<body>
+  <!-- section topbar -->
+  <div class="topbar">
+    <!-- container topbar-->
+    <div class="container_topbar">
+      <ul class="topbar_logo">
+        <li> <img src="{% static 'img/logo/logo-removebg.png' %}" alt="">
+            <h1>fc saint eloi</h1>
+        </li>
+        <li><h1>lupopo</h1></li>
+      </ul>
+      <ul class="topbar_social">
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+      </ul>
+    </div>
+    <!-- End container topbar-->
+  </div>
+  <!-- End section topbar -->
+
+  <!-- section navigation -->
+  <header class="page-header">
+    <nav>
+      <button aria-label="Open Mobile Menu" class="open-mobile-menu fa-lg">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+      <a class="logo-link" href="#">
+        <img class="logo horizontal-logo" src="{% static 'img/logo/logo-removebg.png'%}" alt="forecastr logo">
+        <img class="logo vertical-logo" src="{% static 'img/logo/logo-removebg.png'%}" alt="forecastr logo">
+      </a>
+      <div class="top-menu-wrapper">
+        <div class="panel panel1"></div>
+        <div class="panel panel2"></div>
+        <div class="top-menu">
+          <div class="mob-block">
+            <div class="logo_container">
+              <img class="logo" src="{% static 'img/logo/logo-removebg.png'%}" alt="forecastr horizontal mobile logo">
+              <h1>Fc Saint Eloi Lupopo</h1>
+              <button aria-label="Close Mobile Menu" class="close-mobile-menu fa-lg">
+                <i class="fas fa-times" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="br"></div>
+          </div>
+          <div class="top-menu-nav">
+            <ul class="top-menu-nav-list">
+              <li   class="has-dropdown active-link">
+                <a  id="club" href="#">club =></a>
+                <ul class="sub-menu ">
+                  <li><a href="#">actualité</a></li>
+                  <li><a href="#">historique</a></li>
+                  <li><a href="#">dirigeant</a></li>
+                </ul>
+              </li>
+              <li  class="has-dropdown">
+                <a id="equipe" href="#">equipe premier</a>
+                <ul class="sub-menu">
+                  <li><a href="#">actualités</a></li>
+                  <li><a href="#">calendrier</a></li>
+                  <li><a href="#">effectif</a></li>
+                  <li><a href="#">staff</a></li>
+                </ul>
+              </li>
+              <li  class="has-dropdown">
+                <a id="competiton" href="#">competitions =></a>
+                <ul class="sub-menu">
+                  <li><a href="#">vodacom league 1</a></li>
+                  <li><a href="#">coupe du congo</a></li>
+                  <li><a href="#">confederation</a></li>
+                </ul>                
+              </li>
+              <li >
+                <a href="#">stade</a>
+              </li>
+              <li>
+                <a href="#">palmares</a>
+              </li>
+              <li>
+                <a href="#">sponsors</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="mob-sub-menu-container">
+                <ul class="mob-sub-menu active-sub in club">
+                  <li><div class="title_menu">club</div></li>
+                  <li><a href="#">actualité</a></li>
+                  <li><a href="#">historique</a></li>
+                  <li><a href="#">dirigeant</a></li>
+                </ul>
+                <ul class="mob-sub-menu equipe">
+                  <li><div class="title_menu">equipe premiere</div></li>
+                  <li><a href="#">actualités</a></li>
+                  <li><a href="#">calendrier</a></li>
+                  <li><a href="#">effectif</a></li>
+                  <li><a href="#">staff</a></li>
+                </ul>
+                <ul   class="mob-sub-menu competiton">
+                  <li><div class="title_menu">competitons</div></li>
+                  <li><a href="#">vodacom league 1</a></li>
+                  <li><a href="#">coupe du congo</a></li>
+                  <li><a href="#">confederation</a></li>
+                </ul>  
+            </div>
+          </div>
+          <div class="mob_social_container">
+            <div class="br"></div>
+            <span> Suivez nous sur l'un de ces media sociaux </span>
+            <ul class="socials">
+              <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>            
+            </ul>
+          </div>
+
+        </div>
+        <button class="sponsor">
+          <i class="fa-solid fa-building-columns"></i>
+          <span>afficher les sponsors</span>
+        </button>
+        <ul class="sponsor_container">
+          <li>nike</li>
+          <li>nike</li>
+          <li>nike</li>
+          <li>nike</li>
+        </ul>
+      </div>
+    </nav>
+    <div class="br2"></div>
+  </header>
+  <!-- end section navigation -->
+
+  <!-- top informatioin section -->
+  <section class="bannier">
+    <div class="container_bannier">
+      <div class="stage">
+        <div class="element item1 inactive" style="background-image: url({% static 'img/other/top-info1.jpg' %})">
+            <div class="element_content">
+              <div class="date"> 22 juillet 20222 </div>
+              <div class="title"><h4>Le Club était en Assemblée générale ordinaire ce dimanche</h4></div>
+              <div class="summer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio corporis quod praesentium! Consectetur ducimus voluptatem autem</p>
+                <a class="btn" href="#">lire la suite</a>
+              </div>
+            </div>
+        </div>
+        <div class="element item2 active" style="background-image:url({% static 'img/other/top-info2.jpg' %})">
+            <div class="element_content">
+              <div class="date"> 22 juillet 20222 </div>
+              <div class="title"><h4>Annonce d'une serie de nouveau recrutement par le president</h4></div>            
+              <div class="summer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio corporis quod praesentium! Consectetur ducimus voluptatem autem</p>
+                <a class="btn">lire la suite</a>
+              </div>
+            </div>
+        </div>
+        <div class="element item3 inactive" style="background-image: url({% static 'img/other/top-info3.jpg' %})">
+            <div class="element_content">
+              <div class="date"> 22 juillet 20222 </div>
+              <div class="title"><h4>Qui est Mohamed Magassouba, le nouveau coach ?</h4></div>
+              <div class="summer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio corporis quod praesentium! Consectetur ducimus voluptatem autem</p>
+                <a class="btn" href="#">lire la suite</a>
+              </div>     
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End top info section-->
+  <!-- section boutique -->
+  <section class="boutique"> 
+    <div class="section_container">
+      <div class="boutique_header">
+        <h1 class="title"> notre boutique </h1>
+        <p class="subtitle"> pour mieux representer nos couleurs pendant les matchs </p>
+        <div class="subheader">
+          <a href="#" class="btn btn-custom"> visitez la boutique <i class="fa-solid fa-angles-right"></i>  </a>
+          <img class="boutique_logo" src="{% static 'img/logo/logo-removebg.png'%}" alt="forecastr horizontal mobile logo">
+        </div>
+      </div>
+      <div class="boutique_content">
+        <div class="carousel-wrapper">
+          <div class="carousel">
+            <div class="slider" id="slider" tabindex="0">
+              <div class="slide">
+                <div class="slide_content">
+                  <div class="header_card">
+                    <img src="{% static 'img/other/complet.png' %}" alt="complet"> 
+                    <h3 class="card-title">survetment</h3>
+
+                  </div>
+                  <div class="footer_card">
+                    <div class="price"><h3>125<i class="fa-solid fa-dollar-sign"></i></h3><span>250000 fc</span></div>
+                    <a href="#" class="btn btn-custom"> voir</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="slide_content">
+                  <div class="header_card">
+                    <img src="{% static 'img/other/casquette.png' %}" alt="casquette"> 
+                    <h3 class="card-title">casquette</h3>
+
+                  </div>
+                  <div class="footer_card">
+                    <div class="price"><h3>15<i class="fa-solid fa-dollar-sign"></i></h3><span>30000 fc</span></div>
+                    <a href="#" class="btn btn-custom"> voir plus</a>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="slide">
+                <div class="slide_content">
+                  <div class="header_card">
+                    <img src="{% static 'img/other/vareuse.png' %}" alt="vareuse">
+                    <h3 class="card-title">vareuse</h3>
+                  </div>
+                  <div class="footer_card">
+                    <div class="price"><h3>35<i class="fa-solid fa-dollar-sign"></i></h3><span>70000fc</span></div>
+                    <a href="#" class="btn btn-custom"> voir plus</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="slide_content">
+                  <div class="header_card">
+                    <img src="{% static 'img/other/tshirt.png' %}" alt="tshirt">
+                    <h3 class="card-title">tshirt</h3>
+                  </div>
+                  <div class="footer_card">
+                    <div class="price"><h3>35<i class="fa-solid fa-dollar-sign"></i></h3><span>70000fc</span></div>
+                    <a href="#" class="btn btn-custom"> voir plus</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="slider-control arrow-left hide" id="btn-prev"><i class="fa-solid fa-circle-arrow-left"></i></button>
+            <button class="slider-control arrow-right" id="btn-next"><i class="fa-solid fa-circle-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End section boutique -->
+  <!-- Start section calendrier -->
+  <section class="calendrier">
+    <div class="section_container">
+      <div class="calendrier_body">
+        <div class="calendrier_body_header">
+            <h1 class="title">
+              Calendrier
+            </h1>
+            <p class="subtitle"> retrouver les resulats de match recents et le programme de match avenir. </p>
+
+        </div>
+        <div class="calendrier_body_body">
+            <div class="next_match">
+                <div class="next_match_container">
+                    <div class="comp_presentation">
+                        <img src="{% static 'img/calendrier_section_img/voda.png' %}" alt="coupe">
+                        <h4 class="text-center text-uppercase"> coupe du congo </h4>
+                        <img src="{% static 'img/calendrier_section_img/voda.png' %}" alt="coupe">
+
+                    </div>
+                    <div class="container_club">
+                        <div class="club_presentation">
+                            <span class="lieu"> Domicile </span>
+                            <img class="calendrier_logo" alt="logo" src="{% static 'img/calendrier_section_img/fclupopo_logo.png'  %}">
+                        </div>
+
+                        <div class="vs">
+                            <p class="date">Mardi 23 juin 2023</p>
+                            <p class="stade"> Stadium  </p>
+                        </div>
+
+                        <div class="club_presentation">
+                            <span class="lieu"> Exterieur </span>
+                            <img class="calendrier_logo" alt="logo" src="{% static 'img/calendrier_section_img/tpmlogo.png'  %}">
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <!--
+            <div class="previous_match">
+                <h4> match recent </h4>
+                <div class="owl-carousel vendor-carousel owl-loaded owl-drag">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage" style="transform: translate3d(-1211px, 0px, 0px); transition: all 1s ease 0s; width: 3876px;">
+                            <div class="card">
+                                <div class="header_card text-center"> 30 avril 2022 </div>
+                                <div class="card-body">
+                                    <img class="calendrier_logo" alt="logo" src="{% static 'img/calendrier_section_img/fclupopo_logo.png'  %}">
+                                    <div class="score">
+                                        <span > 3 </span>
+                                        <i class="fa fa-baseball-ball"></i>
+                                        <span > 0 </span>
+                                    </div>
+
+
+                                    <img class="calendrier_logo" alt="logo" src="{% static 'img/calendrier_section_img/Ic_vclub.png'  %}">
+                                </div>
+
+                            </div>
+                            <div class="card">
+                                <div class="header_card text-center"> 30 avril 2022 </div>
+                                <div class="card-body">
+                                    <img class="calendrier_logo" alt="logo" src="{% static 'img/calendrier_section_img/fclupopo_logo.png'  %}">
+                                    <div class="score">
+                                        <span > 3 </span>
+                                        <i class="fa fa-baseball-ball"></i>
+                                        <span > 0 </span>
+                                    </div>
+
+
+                                    <img class="calendrier_logo" alt="logo" src="{% static 'img/calendrier_section_img/Ic_vclub.png'  %}">
+                                </div>
+
+                            </div>
+                            <div class="card">
+                                <div class="header_card text-center"> 30 avril 2022 </div>
+                                <div class="card-body">
+                                    <img class="calendrier_logo" alt="logo" src="{% static 'img/calendrier_section_img/fclupopo_logo.png'  %}">
+                                    <div class="score">
+                                        <span > 3 </span>
+                                        <i class="fa fa-baseball-ball"></i>
+                                        <span > 0 </span>
+                                    </div>
+
+
+                                    <img class="calendrier_logo" alt="logo" src="{% static 'img/calendrier_section_img/Ic_vclub.png'  %}">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            -->
+        </div>
+
+      </div>
+        <!-- Vendor Start -->
+        <div class="container-fluid py-5">
+            <div class="row px-xl-5">
+                <div class="col">
+                    <div class="owl-carousel vendor-carousel">
+                        <div class="vendor-item border p-4">
+                            <img src="{%  static 'img/vendor-1.jpg' %}" alt="">
+                        </div>
+                        <div class="vendor-item border p-4">
+                            <img src="{%  static 'img/vendor-2.jpg' %}" alt="">
+                        </div>
+                        <div class="vendor-item border p-4">
+                            <img src="{%  static 'img/vendor-3.jpg' %}" alt="">
+                        </div>
+                        <div class="vendor-item border p-4">
+                            <img src="{%  static 'img/vendor-4.jpg' %}" alt="">
+                        </div>
+                        <div class="vendor-item border p-4">
+                            <img src="{%  static 'img/vendor-5.jpg' %}" alt="">
+                        </div>
+                        <div class="vendor-item border p-4">
+                            <img src="{%  static 'img/vendor-6.jpg' %}" alt="">
+                        </div>
+                        <div class="vendor-item border p-4">
+                            <img src="{%  static 'img/vendor-7.jpg' %}" alt="">
+                        </div>
+                        <div class="vendor-item border p-4">
+                            <img src="{%  static 'img/vendor-8.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Vendor End -->
+
+    </div>
+  </section>
+  <!--End Section calendrier-->
+  <section class="actualites">
+      <div class="container_section">
+
+      </div>
+  </section>
+
+  <!-- scripts -->
+  <script src="https://unpkg.com/easy-scroll"></script>
+
+  <!-- jquery -->
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'js/base.js' %}"></script>
+  <script src="{% static 'js/bannier.js' %}"></script>
+
+
+</body>
+</html>
+
+<!--
+    /************************************
+    * B_elieve is beautiful,
+    * y_ou believe,you live, *
+    *
+    * N_o one can tell you, *
+    * A text that comes to life. *
+    * T_his is wonderful, *
+    * H_appy is my soul, *
+    * A line of code that comes to life. *
+    * N_o one could believe in 1700. *
+    *
+    * L_ong was the road, *
+    * O_n the Avenue ; lots of bugs, *
+    * P_erfect is the result, when ; *
+    * E_very written word becomes an action, *
+    * Z_ero errors and zero bugs.
+    *
+************************************/
+-->
